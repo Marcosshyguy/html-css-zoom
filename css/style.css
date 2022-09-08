@@ -28,11 +28,18 @@ img{
     width: 100%;
     /* debug */
     background-color: aquamarine;
+
+    position: relative;
 }
 
 .grid{
     width: 80%;
     margin: 0 auto;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 
 
     /* debu */
@@ -84,6 +91,10 @@ img{
 .toolbar i{
     font-size:2rem;
     padding:.2em;
+}
+
+i > [class=fa-solid]{
+    font-size:3px;
 }
 
 .toolbar p{
