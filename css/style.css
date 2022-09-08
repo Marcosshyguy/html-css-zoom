@@ -109,18 +109,16 @@ img{
    
 }
 
-/* [class="fa-chevron-up"]{
-    font-size:4rem;
-} */
 
-.toolbar i{
+.smart-button i{
     font-size:1.6rem;
     padding:.5em;
 }
 
-i > [class=fa-solid]{
-    font-size:3px;
+[class="fa-solid fa-share-from-square"]{
+    color: green;
 }
+
 
 .toolbar p{
     padding:.2em;
