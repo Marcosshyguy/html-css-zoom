@@ -36,8 +36,8 @@ img{
 
 
     /* debu */
-    height: 50%;
-    border: 2px solid black;
+    /* height: 70%; */
+    /* border: 2px solid black; */
 }
 
 .row{
@@ -46,14 +46,11 @@ img{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
-    /* debug */
-    border: 2px solid red;
 }
 
 .col{
     width:calc(100% / 7 -10px);
     position: relative;
-
 }
 
 .col > img{
@@ -69,3 +66,50 @@ img{
     padding: .2em;
 }
 
+/* toolbar */
+
+.toolbar{
+    height: calc(100% - 200px);
+    color: white;
+    background-color: #222222;
+    
+    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/* debug */
+    border: 1px solid black;
+}
+
+.toolbar i{
+    font-size:2rem;
+    padding:.2em;
+}
+
+.toolbar p{
+    padding:.2em;
+}
+
+
+.smart-button{
+    text-align: center;
+}
+
+.cam-mic-settings{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-button{
+    background-color: #4A4A4A;
+    color: red;
+    line-height: 100px;
+    padding: 1em;
+}
