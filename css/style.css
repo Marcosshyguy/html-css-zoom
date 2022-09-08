@@ -17,6 +17,10 @@ img{
     width:100%;
 }
 
+.font{
+    font-size: 1rem;
+}
+
 .mgb{
     margin-bottom: 1em;
 }
@@ -26,15 +30,33 @@ img{
 .wrapper{
     height: 100vh;
     width: 100%;
-    /* debug */
-    background-color: aquamarine;
+
+    background-color: black;
+    padding-top: 5em;
 
     position: relative;
 }
 
+.resizing{
+    position: absolute;
+    right: 0;
+    top: 20px;
+
+    color:white
+}
+
+.resizing span{
+    padding: .5em;
+    background-color: #4A4A4A;
+    border-radius: 3px;
+}
+
+
+
 .grid{
     width: 80%;
     margin: 0 auto;
+    overflow-y: auto;
 
     /* position: absolute;
     top: 50%;
@@ -76,21 +98,24 @@ img{
 /* toolbar */
 
 .toolbar{
-    height: calc(100% - 200px);
+    /* height: calc(100% - 200px); */
     color: white;
     background-color: #222222;
+    text-align: center;
     
-    ;
     display: flex;
     justify-content: space-between;
     align-items: center;
-/* debug */
-    border: 1px solid black;
+   
 }
 
+/* [class="fa-chevron-up"]{
+    font-size:4rem;
+} */
+
 .toolbar i{
-    font-size:2rem;
-    padding:.2em;
+    font-size:1.6rem;
+    padding:.5em;
 }
 
 i > [class=fa-solid]{
@@ -102,9 +127,7 @@ i > [class=fa-solid]{
 }
 
 
-.smart-button{
-    text-align: center;
-}
+
 
 .cam-mic-settings{
     display: flex;
@@ -113,14 +136,16 @@ i > [class=fa-solid]{
 }
 
 .main-settings{
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 2px;
 }
 
 .end-button{
     background-color: #4A4A4A;
     color: red;
-    line-height: 100px;
     padding: 1em;
+    line-height: 100px;
 }
