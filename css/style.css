@@ -12,7 +12,7 @@ body{
     font-family: sans-serif;
     font-size: 100%;
 }
-
+ 
 img{
     width:100%;
 }
@@ -55,6 +55,7 @@ img{
 
 .grid{
     width: 80%;
+    height:calc(100% - 100px);
     margin: 0 auto;
     overflow-y: auto;
 
@@ -62,11 +63,6 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-
-
-    /* debu */
-    /* height: 70%; */
-    /* border: 2px solid black; */
 }
 
 .row{
@@ -98,7 +94,7 @@ img{
 /* toolbar */
 
 .toolbar{
-    /* height: calc(100% - 200px); */
+    height: 100px;
     color: white;
     background-color: #222222;
     text-align: center;
@@ -106,6 +102,10 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /* position: absolute;
+    bottom: 0;
+    left:0; */
    
 }
 
@@ -119,13 +119,9 @@ img{
     color: green;
 }
 
-
 .toolbar p{
     padding:.2em;
 }
-
-
-
 
 .cam-mic-settings{
     display: flex;
@@ -145,5 +141,6 @@ img{
     background-color: #4A4A4A;
     color: red;
     padding: 1em;
-    line-height: 100px;
+    /* height: 100%; */
+    /* line-height: 100px; */
 }
